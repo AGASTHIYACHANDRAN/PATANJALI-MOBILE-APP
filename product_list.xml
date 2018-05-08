@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:backgroundTint="@android:color/background_dark"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.layout.login.Product">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorAccent"
+                app:subtitleTextColor="@android:color/background_light"
+                app:titleTextColor="@android:color/background_light" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/background_dark"
+                    android:backgroundTint="@android:color/background_dark"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="16dp">
+
+                    <TableLayout
+                        android:id="@+id/tableLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1">
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:clickable="true"
+                                app:srcCompat="@drawable/fw"
+                                android:id="@+id/immm" />
+
+                            <Button
+                                android:id="@+id/fw1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:onClick="face"
+                                android:text="Face Wash"
+                                android:textSize="14sp"
+                                 />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/yazhtableRow2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="121dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/s" />
+
+                            <TextView
+                                android:id="@+id/yazhtextView2"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:text="SOAP"
+                                android:textAlignment="viewStart"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/yazhtableRow4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="69dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/j" />
+
+                            <TextView
+                                android:id="@+id/yazhtextView4"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:text="JUICE"
+                                android:textAlignment="viewStart"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/yazhtableRow5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/b" />
+
+                            <TextView
+                                android:id="@+id/yazhtextView5"
+                                android:layout_width="112dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:text="BISCUITS"
+                                android:textAlignment="viewStart"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/yazhtableRow6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="102dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                app:srcCompat="@drawable/r" />
+
+                            <TextView
+                                android:id="@+id/yazhtextView6"
+                                android:layout_width="112dp"
+                                android:layout_height="match_parent"
+                                android:layout_column="1"
+                                android:text="RICE"
+                                android:textAlignment="viewStart"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp" />
+
+                        </TableRow>
+                    </TableLayout>
+                </FrameLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

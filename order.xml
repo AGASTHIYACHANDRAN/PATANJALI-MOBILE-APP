@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grad_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.layout.login.Order">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grad_bg"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="Order Now"
+            android:textSize="35dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:hint="Name"
+                android:layout_marginBottom="10dp"
+                android:inputType="textPersonName" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:layout_marginBottom="10dp"
+                android:hint="Address"
+                android:inputType="textPersonName" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/qty"
+                android:layout_marginBottom="10dp"
+                android:hint="Quantity"
+                android:inputType="textPersonName" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phn"
+                android:layout_marginBottom="10dp"
+                android:hint="Phone"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ORDER"
+                android:id="@+id/regbtn"
+                android:onClick="onClick"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
